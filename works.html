@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,9 +51,10 @@
     <img src="works/logo/7.png" alt="">
     <img src="works/logo/8.png" alt="">
     <img src="works/logo/9.png" alt="">
+<img src="works/logo/10.png" alt="">
 </div>
 <div id="img">
-    <img src="works/11.jpg" alt="">
+    <img src="works/1.jpg" alt="">
 </div>
 <a href="index.html" id="back">返回首页</a>
 </body>
@@ -77,11 +78,11 @@
     };
     for(let i = 0;i<imgs.length;i++){
         imgs[i].onclick=function(){
-            var num= i+1;
-            var nums = num.toString()+num;
-            console.log(nums);
+            var num= Number(i)+1;
+           
+            console.log(num);
             img.innerHTML='';
-            img.innerHTML='<img src="works/'+nums+'.jpg" alt="">';
+            img.innerHTML='<img src="works/'+num+'.jpg" alt="">';
         }
     }
 </script>
